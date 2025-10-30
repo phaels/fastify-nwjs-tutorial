@@ -1,0 +1,37 @@
+{
+  "name": "bootstrap-nwjs-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "fastify": "^4.28.1",
+    "point-of-view": "^6.0.0",
+    "ejs": "^3.1.9",
+    "@fastify/static": "^7.0.1",
+    "serve-favicon": "^2.5.0",
+    "jquery": "*",
+    "bootstrap": "*",
+    "bootstrap-icons": "*",
+    "@popperjs/core": "*"
+  },
+  "description": "Bootstrap NW.js Desktop Anwendung mit Fastify",
+  "node-main": "server.js",
+  "main": "http://localhost:8080",
+  "window": {
+    "toolbar": true,
+    "width": 1000,
+    "height": 600,
+    "resizable": true,
+    "min_width": 800,
+    "min_height": 600
+  },
+  "scripts": {
+    "start": "nw .",
+    "dev": "node server.js",
+    "build:win": "nwbuild --mode=build --platforms win64 .",
+    "build:mac": "nwbuild --mode=build --platforms osx64 .",
+    "build:linux": "nwbuild --mode=build --platforms linux64 .",
+    "build:all": "nwbuild --mode=build --platforms win64,osx64,linux64 ."
+  },
+  "author": "Martin Imle",
+  "license": "MIT"
+}
