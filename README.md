@@ -120,23 +120,30 @@ fastify-nwjs-tutorial/
 **package.json:**
 ```json
 {
-  "name": "fastify-nwjs-tutorial",
+  "name": "bootstrap-nwjs-app",
   "version": "1.0.0",
-  "description": "Fastify NW.js Desktop Anwendung Tutorial",
   "private": true,
-  "main": "http://localhost:8080",
+  "dependencies": {
+    "fastify": "^4.28.1",
+    "point-of-view": "^6.0.0",
+    "ejs": "^3.1.9",
+    "@fastify/static": "^7.0.1",
+    "serve-favicon": "^2.5.0",
+    "jquery": "*",
+    "bootstrap": "*",
+    "bootstrap-icons": "*",
+    "@popperjs/core": "*"
+  },
+  "description": "Bootstrap NW.js Desktop Anwendung mit Fastify",
   "node-main": "server.js",
+  "main": "http://localhost:8080",
   "window": {
-    "title": "Fastify NW.js App",
-    "icon": "icon.png",
     "toolbar": true,
-    "width": 1200,
-    "height": 800,
-    "min_width": 800,
-    "min_height": 600,
+    "width": 1000,
+    "height": 600,
     "resizable": true,
-    "position": "center",
-    "show": true
+    "min_width": 800,
+    "min_height": 600
   },
   "scripts": {
     "start": "nw .",
@@ -144,33 +151,10 @@ fastify-nwjs-tutorial/
     "build:win": "nwbuild --mode=build --platforms win64 .",
     "build:mac": "nwbuild --mode=build --platforms osx64 .",
     "build:linux": "nwbuild --mode=build --platforms linux64 .",
-    "build:all": "nwbuild --mode=build --platforms win64,osx64,linux64 .",
-    "clean": "rm -rf build/ node_modules/",
-    "reinstall": "npm run clean && npm install"
+    "build:all": "nwbuild --mode=build --platforms win64,osx64,linux64 ."
   },
-  "dependencies": {
-    "fastify": "^4.28.1",
-    "point-of-view": "^6.0.0",
-    "ejs": "^3.1.9",
-    "@fastify/static": "^7.0.1"
-  },
-  "devDependencies": {
-    "nw-builder": "^4.6.4",
-    "pino-pretty": "^10.0.1"
-  },
-  "keywords": [
-    "nwjs",
-    "fastify",
-    "bootstrap",
-    "desktop-app",
-    "electron-alternative"
-  ],
   "author": "Martin Imle",
-  "license": "MIT",
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
-  }
+  "license": "MIT"
 }
 ```
 
