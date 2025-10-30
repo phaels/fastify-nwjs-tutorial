@@ -1,5 +1,7 @@
 # 🚀 Fastify NW.js Desktop App Tutorial
 
+<img width="1201" height="851" alt="Bildschirmfoto_20251030_194512" src="https://github.com/user-attachments/assets/6ad69c07-30ad-40d1-9c7f-88cbd74b1422" />
+
 <div align="center">
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
