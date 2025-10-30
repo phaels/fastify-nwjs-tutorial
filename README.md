@@ -286,12 +286,16 @@ start();
 ```html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Fastify NW.js Desktop App Tutorial">
-<meta name="author" content="Dein Name">
-<title><%= title || 'Fastify NW.js App' %> - Fastify Desktop App</title>
+<title>Bootstrap NW.js App mit Fastify</title>
+
+<!-- Website Icon -->
+<link rel="icon" href="/public/layout-text-window-reverse.png" type="image/png">
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 
 <!-- Bootstrap JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -301,27 +305,6 @@ start();
 
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-<style>
-  .card {
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  
-  .jumbotron {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-  }
-  
-  .footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #dee2e6;
-  }
-</style>
 ```
 
 **views/partials/header.ejs:**
