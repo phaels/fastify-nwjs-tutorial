@@ -139,6 +139,8 @@ fastify-nwjs-tutorial/
   "main": "http://localhost:8080",
   "window": {
     "toolbar": true,
+    "title": "Fastify NW.js App",
+    "icon": "public/layout-text-window-reverse.png",
     "width": 1000,
     "height": 600,
     "resizable": true,
