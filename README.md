@@ -130,11 +130,7 @@ fastify-nwjs-tutorial/
     "point-of-view": "^6.0.0",
     "ejs": "^3.1.9",
     "@fastify/static": "^7.0.1",
-    "serve-favicon": "^2.5.0",
-    "jquery": "*",
-    "bootstrap": "*",
-    "bootstrap-icons": "*",
-    "@popperjs/core": "*"
+    "serve-favicon": "^2.5.0"
   },
   "description": "Bootstrap NW.js Desktop Anwendung mit Fastify",
   "node-main": "server.js",
